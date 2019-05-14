@@ -18,10 +18,10 @@
 
 set -e
 
-INITIAL_COPYRIGHT_YEAR=2017
+INITIAL_COPYRIGHT_YEAR=2019
 
 # Required!
-export DEVICE=mido
+export DEVICE=ysl
 export DEVICE_COMMON=msm8953-common
 export VENDOR=xiaomi
 
@@ -39,16 +39,16 @@ fi
 . "$HELPER"
 
 # Initialize the helper
-setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
+#setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
 
 # Copyright headers and guards
-write_headers "mido tissot"
+#write_headers "ysl"
 
 # The standard common blobs
-write_makefiles "$MY_DIR"/proprietary-files-qc.txt true
+#write_makefiles "$MY_DIR"/proprietary-files-qc.txt true
 
 # We are done!
-write_footers
+#write_footers
 
 if [ -s "$MY_DIR"/proprietary-files.txt ]; then
     # Reinitialize the helper for device
