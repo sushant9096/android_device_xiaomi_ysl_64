@@ -689,6 +689,9 @@ vendor/lib/hw/fingerprint.fpc.default.so
 # Fingerprint init script
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 
+# Fingerprint permissions from ysl
+vendor/etc/permissions/com.fingerprints.extension.xml
+
 # Display caliberation .xml's from ysl
 vendor/etc/qdcm_calib_data_auo_ili7807d_hd720_video_mode_dsi_panel.xml
 vendor/etc/qdcm_calib_data_shenchao_ili9881c_hd720p_video_mode_dsi_panel.xml
