@@ -105,14 +105,6 @@ on boot
     chown system system /sys/kernel/boot_adsp/ssr
     chmod 0660 /sys/module/bluetooth_power/parameters/power
     chmod 0660 /sys/module/radio_iris_transport/parameters/fmsmd_set
-    chown system system /proc/touchpanel/capacitive_keys_disable
-    chmod 0666 /proc/touchpanel/capacitive_keys_disable
-    chown system system /sys/bus/i2c/devices/3-0038/disable_keys
-    chmod 0666 /sys/bus/i2c/devices/3-0038/disable_keys
-    chown system system /sys/devices/soc/78b7000.i2c/i2c-3/3-0038/enable_dt2w
-    chmod 0664 /sys/devices/soc/78b7000.i2c/i2c-3/3-0038/enable_dt2w
-    chown system system /proc/touchpanel/enable_dt2w
-    chmod 0664 /proc/touchpanel/enable_dt2w
 
     #Create QMUX deamon socket area
     mkdir /dev/socket/qmux_radio 0770 radio radio
@@ -156,20 +148,15 @@ on boot
     chown system system /dev/goodix_fp
     chmod 0644 /dev/goodix_fp
 
-    chown system system /sys/devices/soc/soc:fpc1020/compatible_all
-    chmod 0664 /sys/devices/soc/soc:fpc1020/compatible_all
-    chown system system /sys/devices/soc/soc:fpc1020/irq
-    chmod 0660 /sys/devices/soc/soc:fpc1020/irq
-    chown system system /sys/devices/soc/soc:fpc1020/hw_reset
+    chown system system /sys/devices/soc/soc:fpc1020/hw_reset 
     chmod 0660 /sys/devices/soc/soc:fpc1020/hw_reset
-    chown system system /sys/devices/soc/soc:fpc1020/wakeup_enable
+    chown /sys/devices/soc/soc:fpc1020/irq 
+    chmod 0660 /sys/devices/soc/soc:fpc1020/irq
+    chown system system /sys/devices/soc/soc:fpc1020/wakeup_enable 
     chmod 0660 /sys/devices/soc/soc:fpc1020/wakeup_enable
-    chown system system /sys/devices/soc/soc:fpc1020/wakeup_enable
-    chmod 0660 /sys/devices/soc/soc:fpc1020/wakeup_enable
+    chown system system /sys/devices/soc/soc:fpc1020/fingerdown_wait 
+    chmod 0220 /sys/devices/soc/soc:fpc1020/fingerdown_wait  
 
-    # Glove Mode
-    chown system system /sys/class/tp_glove/device/glove_enable
-    chmod 0660 /sys/class/tp_glove/device/glove_enable
 
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
