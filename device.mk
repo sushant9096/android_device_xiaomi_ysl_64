@@ -130,6 +130,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
+	
+# Doze mode
+PRODUCT_PACKAGES += \
+    XiaomiDoze
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -278,7 +282,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-     power.qcom
+    power.qcom
 
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
