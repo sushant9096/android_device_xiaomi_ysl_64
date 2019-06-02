@@ -28,6 +28,7 @@ vendor/lib/libvidhance.so
 vendor/lib/libvidhance_gyro.so
 vendor/lib/libXMFD_AgeGender.so
 vendor/lib/libois_lc898122.so
+-vendor/lib/libarcsoft_beautyshot_exin.so
 
 # Camera mmcamera
 vendor/lib/libmmcamera2_c2d_module.so
